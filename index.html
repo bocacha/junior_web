@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+            <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=1645741749" rel="stylesheet" type="text/css" />
+
+    <link href="https://www.tfaforms.com/uploads/themes/theme-81951.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=1645741749" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=1645741749"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=1645741749"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="img-ptf"></div>
+            <img id="img-ja-logo" src="img/JA_Logo.png">
+        </div>
+        <div class="border-header"></div>
+        <nav>
+            <div class="container-nav">
+                <ul>
+                    <a style="cursor: pointer;" data-link="section_contenido" class="scroll_to">
+                        <li>Contenido</li>
+                    </a>
+                    <a style="cursor: pointer;" data-link="section_participa" class="scroll_to">
+                        <li>Participá</li>
+                    </a>
+                    <a style="cursor: pointer;" data-link="section_testimonios" class="scroll_to">
+                        <li>Testimonios</li>
+                    </a>
+                    <a style="cursor: pointer;" data-link="section_inscripcion" class="scroll_to">
+                        <li>Inscripción</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="portada">
+            <h1>SER ADULTO<br>ES DIFÍCIL,<br>ESTAR<br>PREPARADO NO.</h1>
+        </div>
+    </header>
+    <div class="container-inscripcion" id="section_inscripcion">
+        <div class="container-texto-insc">
+            <h3 class="titulo-insc">PLANIFICÁ<br> TU FUTURO</h3>
+            <div class="insc-txt-1">
+                <p style="margin-bottom: 0px;">¿Querés moverte mejor<br>en el mundo adulto?</p>
+                <img style="margin-bottom: 15%" src="img/lineas-texto-2.png">
+            </div>
+            <div class="insc-txt-2">
+                <p style="margin-bottom: 0px; margin-top: 0px">¿Tener mejores<br>oportunidades y trabajos?</p>
+                <img style="margin-bottom: 15%" src="img/lineas-texto-4.png">
+            </div>
+            <div class="insc-txt-3">
+                <p class="txt-1"><strong>¡Estar listo se puede!</strong></p>
+                <p class="txt-2"><strong>Aprendé, desarrollate y preparate para</strong> que <strong>tu futuro</strong>
+                    sea tal
+                    cual lo imaginás.
+                </p>
+            </div>
+        </div>
+        <div class="container-formulario">
+            <!-- FORM: BODY SECTION -->
+            <div class="wFormContainer" style="max-width: 430px; width:auto;">
+                <div class="wFormHeader"></div>
+                <style type="text/css">
+                            #tfa_2,
+                            *[id^="tfa_2["] {
+                                width: 190px;
+                            }
+                            #tfa_2-D,
+                            *[id^="tfa_2["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_3,
+                            *[id^="tfa_3["] {
+                                width: 190px ;
+                            }
+                            #tfa_3-D,
+                            *[id^="tfa_3["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_5,
+                            *[id^="tfa_5["] {
+                                width: 190px;
+                            }
+                            #tfa_5-D,
+                            *[id^="tfa_5["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_9,
+                            *[id^="tfa_9["] {
+                                width: 190px ;
+                            }
+                            #tfa_9-D,
+                            *[id^="tfa_9["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_27,
+                            *[id^="tfa_27["] {
+                                width: 190px ;
+                            }
+                            #tfa_27-D,
+                            *[id^="tfa_27["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_12,
+                            *[id^="tfa_12["] {
+                                width: 190px ;
+                            }
+                            #tfa_12-D,
+                            *[id^="tfa_12["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_12-L,
+                            label[id^="tfa_12["] {
+                                width: -1px ;
+                                min-width: 0px;
+                            }
+                        
+                            #tfa_17,
+                            *[id^="tfa_17["] {
+                                width: 400px ;
+                            }
+                            #tfa_17-D,
+                            *[id^="tfa_17["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_21,
+                            *[id^="tfa_21["] {
+                                width: 190px ;
+                            }
+                            #tfa_21-D,
+                            *[id^="tfa_21["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_22,
+                            *[id^="tfa_22["] {
+                                width: 190px ;
+                            }
+                            #tfa_22-D,
+                            *[id^="tfa_22["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_24,
+                            *[id^="tfa_24["] {
+                                width: 400px ;
+                            }
+                            #tfa_24-D,
+                            *[id^="tfa_24["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_24-L,
+                            label[id^="tfa_24["] {
+                                width: 400px ;
+                                min-width: 0px;
+                            }
+                        
+                            #tfa_25,
+                            *[id^="tfa_25["] {
+                                width: 400px ;
+                            }
+                            #tfa_25-D,
+                            *[id^="tfa_25["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        
+                            #tfa_26,
+                            *[id^="tfa_26["] {
+                                width: 400px ;
+                            }
+                            #tfa_26-D,
+                            *[id^="tfa_26["][class~="field-container-D"] {
+                                width: auto ;
+                            }
+                        </style><div class=""><div class="wForm" id="4967005-WRPR" dir="ltr">
+            <div class="codesection" id="code-4967005"><style type="text/css">
+            .wForm .wfPagingButtons, .wForm .actions { width: 100% !important; text-align: center;
+              margin-top: 0px !important;
+              padding-top: 0px !important;
+                margin-bottom: 0px !important;
+              padding-bottom: 0px !important;
+            }
+            </style>
+            <style>
+            .wForm {
+            padding: 0px 6px !important;
+            }
+            </style>
+            <style type="text/css">
+            .wFormContainer .supportInfo {
+                display: none;
+             }
+            </style>
+            <style>
+            .wForm {
+            padding: 0px 6px !important;
+            }
+            </style></div>
+            <form method="post" action="https://www.tfaforms.com/api_v2/workflow/processor" class="hintsBelow labelsAbove" id="4967005" role="form">
+            <div id="tfa_37" class="section inline group">
+            <div class="oneField field-container-D    " id="tfa_2-D">
+            <label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Nombre</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2" value="" title="Nombre" class="required"></div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_3-D">
+            <label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Apellido</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3" value="" title="Apellido" class="required"></div>
+            </div>
+            </div>
+            <div id="tfa_10" class="section inline group">
+            <div class="oneField field-container-D    " id="tfa_5-D">
+            <label id="tfa_5-L" class="label preField reqMark" for="tfa_5">Tipo documento</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_5" name="tfa_5" title="Tipo documento" class="required"><option value=""></option>
+            <option value="tfa_6" id="tfa_6" class="">DNI</option>
+            <option value="tfa_7" id="tfa_7" class="">Pasaporte</option>
+            <option value="tfa_8" id="tfa_8" class="">Otros</option></select></div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_9-D">
+            <label id="tfa_9-L" class="label preField reqMark" for="tfa_9">Número</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_9" name="tfa_9" value="" title="Número" class="required"></div>
+            </div>
+            </div>
+            <div id="tfa_38" class="section inline group">
+            <div class="oneField field-container-D    " id="tfa_27-D">
+            <label id="tfa_27-L" class="label preField reqMark" for="tfa_27">Fecha (dd/mm/aaaa)</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_27" name="tfa_27" value="" default="" title="Fecha" class="validate-date required"></div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_12-D">
+            <label id="tfa_12-L" class="label preField reqMark" for="tfa_12">Género</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_12" name="tfa_12" title="Género" class="required"><option value=""></option>
+            <option value="tfa_13" id="tfa_13" class="">Femenino</option>
+            <option value="tfa_14" id="tfa_14" class="">Masculino</option>
+            <option value="tfa_15" id="tfa_15" class="">Otro</option></select></div>
+            </div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_17-D">
+            <label id="tfa_17-L" class="label preField reqMark" for="tfa_17">Páis de nacimiento</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_17" name="tfa_17" title="Páis de nacimiento" class="required"><option value=""></option>
+            <option value="tfa_18" id="tfa_18" class="">Argentina</option>
+            <option value="tfa_19" id="tfa_19" class="">Bolivia</option>
+            <option value="tfa_20" id="tfa_20" class="">Brasil</option>
+            <option value="tfa_28" id="tfa_28" class="">Chile</option>
+            <option value="tfa_29" id="tfa_29" class="">Colombia</option>
+            <option value="tfa_30" id="tfa_30" class="">Costa Rica</option>
+            <option value="tfa_31" id="tfa_31" class="">Ecuador</option>
+            <option value="tfa_32" id="tfa_32" class="">Paraguay</option>
+            <option value="tfa_33" id="tfa_33" class="">Peru</option>
+            <option value="tfa_34" id="tfa_34" class="">República Dominicana</option>
+            <option value="tfa_35" id="tfa_35" class="">Uruguay</option>
+            <option value="tfa_36" id="tfa_36" class="">Venezuela</option></select></div>
+            </div>
+            <div id="tfa_23" class="section inline group">
+            <div class="oneField field-container-D    " id="tfa_21-D">
+            <label id="tfa_21-L" class="label preField reqMark" for="tfa_21">Provincia de residencia</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_21" name="tfa_21" value="" title="Prov. residencia" class="required"></div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_22-D">
+            <label id="tfa_22-L" class="label preField reqMark" for="tfa_22">Localidad de residencia </label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_22" name="tfa_22" value="" title="Loc. residencia " class="required"></div>
+            </div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_24-D">
+            <label id="tfa_24-L" class="label preField reqMark" for="tfa_24">E-mail</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_24" name="tfa_24" value="" title="E-mail" class="required"></div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_25-D">
+            <label id="tfa_25-L" class="label preField reqMark" for="tfa_25">Celular</label><br><div class="inputWrapper">
+            <input aria-required="true" type="text" id="tfa_25" name="tfa_25" value="" aria-describedby="tfa_25-HH" title="Celular" class="required"><span class="field-hint-inactive" id="tfa_25-H"><span id="tfa_25-HH" class="hint">Por favor, ingresá el número en el siguiente formato: +54 911 0000 0000 o para triple código de área: +54 9221 0000 sin simbolos ni guiones.</span></span>
+            </div>
+            </div>
+            <div class="oneField field-container-D    " id="tfa_26-D">
+            <label id="tfa_26-L" class="label preField reqMark" for="tfa_26">Escuela secundaria a la que asistís/egresaste</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_26" name="tfa_26" value="" title="Escuela secundaria a la que asistís/egresaste" class="required"></div>
+            </div>
+            <div class="actions" id="4967005-A"><input type="submit" data-label="INSCRIBITE" class="primaryAction" id="submit_button" value="INSCRIBITE"></div>
+            <div style="clear:both"></div>
+            <input type="hidden" value="4967005" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="2f3cc6b490601e5e81395623ece2c383" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="17" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+            </form>
+            </div></div><div class="wFormFooter"><p class="supportInfo"><br></p></div>
+              <p class="supportInfo" >
+                  </p>
+             </div>
+            
+            
+        </div>
+    </div>
+    <div class="border-header-2">
+
+    </div>
+    <div class="container-contenido" id="section_contenido">
+        <p class="empeza-ahora">¡EMPEZÁ AHORA!</p>
+        <div class="cont-flex-img-txt">
+            <div class="img-izq">
+                <img style="overflow: hidden;" src="img/CONONOCERTE_cortada_25_20.png">
+            </div>
+            <div>
+                <p class="title-der">CONOCETE</p>
+                <div style="min-width: 112%">
+                    <p class="txt-der">Descubrí todo lo que
+                        te gusta<br>
+                        y lo que no, <strong>para lo que sos bueno</strong>.<br>
+                        Hay potencial en vos, conocelo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont-flex-txt-img">
+            <div>
+                <p class="title-izq">PROPÓSITO</p>
+                <div style="min-width: 112%">
+                    <p class="txt-izq">Encontrá que es
+                        <strong>lo que te mueve</strong>,<br>
+                        a eso sumale un buen plan. Conocé<br>
+                        tu propósito.
+                    </p>
+                </div>
+
+            </div>
+            <div class="img-der">
+                <img style="overflow: hidden;" src="img/PRPOSITO_cortada_25_20.png">
+            </div>
+        </div>
+        <div class="cont-flex-img-txt">
+            <div class="img-izq">
+                <img style="overflow: hidden;" src="img/RUTA_cortada_25_20.png">
+            </div>
+            <div>
+                <p class="title-der">RUTA</p>
+                <div style="min-width: 112%">
+                    <p class="txt-der">El mundo adulto
+                        puede<br>ser
+                        agotador pero no pasa nada:<br>
+                        <strong>metas claras</strong>, un camino bien<br>
+                        trazado y avanzamos!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cont-flex-txt-img">
+            <div>
+                <p class="title-izq">CARRERAS</p>
+                <div style="min-width: 112%">
+                    <p class="txt-izq">Mundo STEM.
+                        <strong>Conocé las carreras<br>
+                            y oportunidades, tendencias</strong>,<br>
+                        profesiones clave y habilidades<br>
+                        valoradas.
+                    </p>
+                </div>
+
+            </div>
+            <div class="img-der">
+                <img style="overflow: hidden;" src="img/CARRERAS_cortada_25_20.png">
+            </div>
+        </div>
+        <div class="cont-flex-img-txt">
+            <div class="img-izq">
+                <img style="overflow: hidden;" src="img/PERFIL_cortada_25_20.png">
+            </div>
+            <div>
+                <p class="title-der">PERFIL</p>
+                <div style="min-width: 112%">
+                    <p class="txt-der">Desarrollá tus
+                        contactos, <strong>creá un<br> currículum potente</strong>
+                        y aprendé a<br>
+                        armar tu perfil de Linkedin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont-flex-txt-img" id="margin-accion">
+            <div>
+                <p class="title-izq">ACCIÓN</p>
+                <div style="min-width:112%">
+                    <p class="txt-izq">Cómo es una
+                        <strong>entrevista</strong> de trabajo<br>
+                        y cómo sigue. Del dicho al hecho:<br>
+                        armamos un plan de acción para<br>
+                        <strong>conseguir el primer trabajo</strong>.
+                    </p>
+                </div>
+            </div>
+            <div class="img-der">
+                <img style="overflow: hidden;" src="img/ACCION_cortada_25_20.png">
+            </div>
+        </div>
+    </div>
+    <div class="cont-vos-podes">
+        <p><strong>¡VOS PODÉS<br>PARTICIPAR!</strong></p>
+    </div>
+    <div class="container-participa" id="section_participa">
+        <div class="participa-flex-1">
+            <p class="" style="font-family: monstserratBold, sans-serif;"><strong>¿Tenés entre 16 y 21 años y vivís en
+                    Argentina?</strong></p>
+            <p class="txt-flex-1">Empezá ahora a mejorar tus posibilidades para el futuro</p>
+        </div>
+        <div class="participa-flex-2">
+            <div class="flex-2-txt">
+                <p>
+                    El curso se realiza de manera <strong>autogestionada</strong>
+                    dentro del <strong>Campus Virtual de JA.</strong> Organízate
+                    y encontrá los mejores momentos. Siempre contás con la ayuda
+                    de un <strong>tutor.</strong>
+                </p>
+            </div>
+            <div class="flex-2-img">
+                <img src="img/Compu_2.png">
+            </div>
+        </div>
+        <div class="participa-flex-3">
+            <div class="flex-3-img">
+                <img src="img/Reloj-50.png">
+            </div>
+            <p>
+                <strong>Duración total<br> </strong>3 semanas (dedicación<br>
+                estimada de 10 horas)
+            </p>
+        </div>
+        <div class="participa-flex-4">
+            <div class="flex-4-txt">
+                <p>Si necesitás ayuda para completar tu inscripción contactate
+                    con nosotros al <a
+                        href="https://api.whatsapp.com/send/?phone=5491168362420&text=%C2%A1Hola%21+Quiero+inscribirme+en+Planific%C3%A1+tu+futuro...&app_absent=0">+54
+                        911 6836 2420</a> ó
+                    al planificatufuturo@junior.org.ar</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont-boton-recto-2">
+
+    </div>
+    <div class="cont-boton-recto">
+        <p><a HREF="https://junior.org.ar/wp-content/uploads/2021/10/Planifica%CC%81-tu-futuro.pdf"><strong>DESCARGÁ EL
+            PROGRAMA COMPLETO ACÁ</strong></a></p>
+    </div>
+    <div class="cont-boton">
+        <p><a HREF="https://junior.org.ar/wp-content/uploads/2021/10/Planifica%CC%81-tu-futuro.pdf"><strong>DESCARGÁ EL
+                    PROGRAMA COMPLETO ACÁ</strong></a></p>
+    </div>
+    <div class="cont-boton-a">
+
+    </div>
+    <div class="container-testimonios" id="section_testimonios">
+        <!--CARRUSEL-->
+       <!-- <img class="separador_ca" src="img/separador_ testimonios_25.png">
+        <div class="container-slider">
+            <div class="slider" id="slider">
+                <div class="slider_section">
+                    <p class="slider_p">“Planificá Tu Futuro ayuda muchísimo para
+                        tomar decisiones. Nos llenan de herramientas: cosas
+                        super útiles y del mundo real. Creo que es una oportunidad
+                        única para dar pasos firmes en mi futuro laboral”.<br><br>
+                    </p>
+                    <p class="slider_pp"><strong style="color:#00A0AF">Gabriel López Marisco</strong>, Buenos Aires</p>
+                </div>
+
+                <div class="slider_section">
+                    <p class="slider_p">“Gracias a Planificá tu futuro pude tomar
+                        la decisión de cambiar de carrera, ahora me siento más
+                        cómoda y entusiasmada con lo que voy a hacer”.<br><br>
+                    </p>
+                    <p class="slider_pp">
+                        <strong style="color:#00A0AF">Sofía Ponce</strong>,
+                        Mendoza
+                    </p>
+                </div>
+                <div class="slider_section">
+                    <p class="slider_p">¿“Me encontré con el Planificá tu
+                        futuro en el momento indicado, era lo que necesitaba
+                        y buscaba. Empecé con expectativas y terminé con muchas
+                        herramientas, habilidades, motivación y reflexión que
+                        me ayudarán a partir de ahora”.<br><br>
+                    </p>
+                    <p class="slider_pp">
+                        <strong style="color:#00A0AF">Daniela Choque Zúñiga</strong>, Jujuy
+                    </p>
+                </div>
+            </div>
+            <div class="slider_btn slider_btn-right" id="btn-right">
+                <img src="img/Flecha2-50.png">
+            </div>
+            <div class="slider_btn slider_btn-left" id="btn-left">
+                <img src="img/Flecha1-50.png">
+            </div>
+            <script src="slider.js"></script>
+        </div>
+    -->
+        <img class="separador_ca" src="img/separador_ testimonios_25.png">
+        <!--CARRUSEL END-->
+        <div class="texto-participa">
+            <p class="texto_docente">Si sos <strong>docente</strong> o perteneces a una <strong>escuela:</strong></p>
+            <p class="boton_participa"><a
+                    href="https://junior.org.ar/planificatufuturo/?utm_source=organico&utm_medium=landingb2c&utm_campaign=planifica">PARTICIPÁ
+                    ACÁ</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="texto-footer">
+            <p class="titulo-footer"><strong>PLANIFICÁ TU FUTURO</strong></p>
+            <p class="desc-footer">©2020 Programa Planificá tu futuro.
+                JA Argentina. Miembro de JA Worldwide.<br>Todos los derechos reservados.
+                Conocé nuestra Política de privacidad.
+            </p>
+        </div>
+        <div class="iconos-footer">
+            <a href="https://www.linkedin.com/company/103461/admin/"><img src="img/1_LKD_mini.png"></a>
+            <a href="https://www.instagram.com/fundacionjaa/"><img src="img/2_IG_mini.png"></a>
+            <a href="https://www.facebook.com/JuniorAchievementAr"><img src="img/3_FB_mini.png"></a>
+            <a href="https://twitter.com/FundacionJAA"><img src="img/4_TW_mini.png"></a>
+            <a href="https://www.tiktok.com/@jaargentina"><img src="img/5_T_mini.png"></a>
+        </div>
+    </div>
+    <script src="scroll_nav.js"></script>
+</body>
+
+</html>
