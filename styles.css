@@ -492,7 +492,8 @@ height:0px !important;
 }
 
         /* Media Query for Mobile Devices */
-        @media (max-width: 480px) {
+        /* @media (max-width: 480px) { */
+            @media (min-width: 360px){
             .portada{
                 background-image: url(./img/port-reducida.png) !important;
             }
@@ -715,7 +716,8 @@ height:0px !important;
         }
           
         /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
+        /* @media (min-width: 481px) and (max-width: 767px) { */
+        @media (min-width: 600px) {
             .container-inscripcion{
                 flex-direction: column;
             }
@@ -820,7 +822,8 @@ height:0px !important;
         }
           
         /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
+        /* @media (min-width: 768px) and (max-width: 1024px){ */
+        @media (min-width: 1100px) {
             .container-inscripcion{
                 flex-direction: column;
             }
@@ -865,7 +868,8 @@ height:0px !important;
         }
           
         /* Media Query for Laptops and Desktops */
-        @media (min-width: 1025px) and (max-width: 1280px){
+        /* @media (min-width: 1025px) and (max-width: 1280px){ */
+        @media (min-width: 1440px) {
 
             .titulo-footer{
                 font-size: 14pt !important;
